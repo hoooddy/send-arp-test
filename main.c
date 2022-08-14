@@ -20,8 +20,8 @@ int main(int argc, char* argv[]) {
 		return -1;
 	}
 	
-	int num_sender = (argc-2)/2; // 
-	int num_reply = num_sender; // number of senders
+	int num_sender = (argc-2)/2; // number of senders 
+	int num_reply = num_sender; 
 	struct EthArpPacket pck[num_sender];
 	
 	for(int i = 0; i < num_sender; i++){
@@ -103,6 +103,6 @@ int main(int argc, char* argv[]) {
 		}
 	}
 	pcap_close(handle);
-	printf("done!\n");
+	printf("Done!!!");
 	return 0;
 }
